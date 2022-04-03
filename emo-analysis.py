@@ -63,7 +63,7 @@ sadness_values = []
 fear_values = []
 disgust_values = []
 
-df = pd.read_csv('premises.csv')
+df = pd.read_csv('past/premises.csv')
 emo_an = pd.DataFrame(df)
 
 for i in emo_an['text']:
