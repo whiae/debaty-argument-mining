@@ -150,7 +150,7 @@ emo_an['EMO_lab'] = labels
 
 ''' zapisywanie do pliku '''
 
-emo_an.to_csv('emotions-analysis.csv', index=False, encoding='utf-8')
+emo_an.to_csv('out/emotions-analysis.csv', index=False, encoding='utf-8')
 
 
 ''' wizualizacja '''
