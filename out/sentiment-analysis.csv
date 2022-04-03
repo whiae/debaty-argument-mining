@@ -3,7 +3,7 @@ text,SEN_val,SEN_lab
 wyboru prokuratora generalnego w wyborach powszechnych;,0,None
 ale trzeba wprowadzić też więcej kontroli społecznej w wymiarze sprawiedliwości.,2,POS
 Sytuację trzeba uporządkować,-1,NEG
-"bo ten bałagan, bajzel który zrobili w wymiarze sprawiedliwości rządzący jest niedopuszczalny",0,None
+"bo ten bałagan, bajzel który zrobili w wymiarze sprawiedliwości rządzący jest niedopuszczalny",-1,NEG
 "Sędziowie pokoju to jest szansa na rozwiązanie problemów najprostszych,",1,POS
 nie chcą żeby było realizowane hasło że sprawiedliwość jest uciekinierką z obozu rządzących.,1,POS
 "U was, za waszych rządów, sprawiedliwość wyszła z sali sądowej a weszła na nią polityka.",1,POS
@@ -14,7 +14,7 @@ nie chcą żeby było realizowane hasło że sprawiedliwość jest uciekinierką
 "Przywrócenie praworządności, tak jak lata trwało jej dewastowanie, jeżeli chodzi o Prawo i Sprawiedliwość, to też będzie trwało lata, a my mamy rozpisany kalendarz przywracania Polski na ścieżkę praworządności do 2022 roku, wtedy dopiero tak naprawdę ostatecznie da się posprzątać po tym co PiS przez te lata nawyczyniał.",4,POS
 "Chcę też powiedzieć bardzo jasno i jednoznacznie, że możecie się bać tego że lewica wraca do parlamentu,",0,None
 "dlatego że prawnicy nie wybierani demokratycznie mogą zmieniać prawa, mogą akceptować pewne kontrowersyjne reformy jak np. grabież środków z OFE i nie podlegają właściwie żadnym regułom.",2,POS
-"My w Konfederacji nie chcemy się wikłać w spory między PiSem, Platformą, SLD,  o to, kto będzie miał więcej udziałów w systemie, który tak naprawdę służy utrwaleniu porządku stworzonego przy Okrągłym Stole.",-1,NEG
+"My w Konfederacji nie chcemy się wikłać w spory między PiSem, Platformą, SLD,  o to, kto będzie miał więcej udziałów w systemie, który tak naprawdę służy utrwaleniu porządku stworzonego przy Okrągłym Stole.",-2,NEG
 "Prezydent Andrzej Duda taką dyskusję zapowiadał, niestety Konfederacji, ani sił, które są w tej chwili w Konfederacji, do tej dyskusji nigdy nie zaprosił.",-1,NEG
 "Natomiast my tę dyskusję prowadzimy, adwokat Jacek Wilk, jeden z naszych kandydatów już przedstawił swój projekt ,są inne projekty będziemy o tym wszystkim dyskutować.",2,POS
 "Nam się taka sytuacja nie podoba i nie mamy zamiaru tutaj, jak mówię, za tych prawników z jednej czy drugiej frakcji umierać czy się tutaj kłócić, bo to to nie ma nic wspólnego z interesami zwykłych ludzi.",-2,NEG
@@ -60,7 +60,7 @@ Prawo nie obowiązuje inwestora dwóch wież Jarosława Kaczyńskiego,1,POS
 Dzisiaj prawo nie obowiązuje działaczy PiS-u.,1,POS
 "Dzięki PiS Polska może być zachodnim krajem na zachodnim poziomie dobrobytu, jednocześnie zachowując to co dla nas najważniejsze: naszą tożsamość, naszą tradycję, polską rodzinę.",2,POS
 "PiS nie spoczywa na laurach, przed nami ogromna szansa,",1,POS
-"Polacy z wielkich miast, z małych miast, z wsi, z którymi się spotykamy w tej kampanii wyborczej mówią -  tak, żyje nam się lepiej.",1,POS
+"Polacy z wielkich miast, z małych miast, z wsi, z którymi się spotykamy w tej kampanii wyborczej mówią -  tak, żyje nam się lepiej.",0,None
 "Otrzymaliśmy 500+, otrzymaliśmy trzynaste emerytury, mamy niższe podatki, ale przede wszystkim jesteśmy dumni z Polski.",1,POS
 Konfederacja ma najniższą średnią wieku wśród kandydatów na swoich listach.,0,None
 "Konfederacja uważa, że w Sejmie potrzebni są ludzie ideologii, ludzie konserwatywni, ludzie niezależnie myślący, ludzie którzy są dobrze przygotowani.",0,None
@@ -103,7 +103,7 @@ To tylko doprowadzi do zmiany całego systemu.,0,None
 "nie da się z jednostkowego przykładu wyciągać jakichś ogólnych wniosków,",1,POS
 "Jeżeli służby specjalne, które przez PiS były reformowane przez cztery lata, nie potrafią prześwietlić kandydatów na kluczowe państwowe stanowiska, ",0,None
 "Co mnie zupełnie nie dziwi, bo wiem, że policjanci odpowiedzialni za nadużycia przy Marszach Niepodległości ciągle pracują na tych samych komisariatach co wcześniej.",0,None
-"nie zajmujemy się w tym programie sprawą pana Banasia, albo tą czy inną aferą PiS-u czy Platformy, tylko zajmujemy się rzeczami kluczowymi  - jak sądzimy -  dla Polaków.",0,None
+"nie zajmujemy się w tym programie sprawą pana Banasia, albo tą czy inną aferą PiS-u czy Platformy, tylko zajmujemy się rzeczami kluczowymi  - jak sądzimy -  dla Polaków.",-1,NEG
 "Jeżeli chodzi o nominacje na różne funkcje, no to trzeba się kierować zdrowym rozsądkiem, ostrożnością, no i oczywiście tutaj powinna swoją rolę też odegrać służby specjalne.",1,POS
 Bo to jest jedna z dwóch możliwych sytuacji.,0,None
 "Pierwsza sytuacja jest taka, że mamy służby tak nieudolne, że nie są w stanie zorientować się że człowiek pełniący najwyższe stanowiska państwowe: w administracji skarbowej, w Służbie Celnej, czyli tam gdzie przestępcy marzą o tym żeby mieć wpływ, na to w jaki sposób podejmowane są decyzje, że ten człowiek ma powiązania takie jakie ma, takie jakie zostały ujawnione przez media.",0,None
@@ -226,7 +226,7 @@ Do końca roku w procedowaniu będzie ponad 100 tysięcy wniosków na ponad dwa 
 "Po drugie uruchomiliśmy wielki program czyste powietrze, on jest w początkowej fazie realizacji, ale mamy już podpisane 27 tysięcy umów na 500 milionów dofinansowania.",3,POS
 "Dzięki temu programowi Polacy w swoich domach będą mieli wsparcie, żeby mogli właśnie wymieniać te piece, żeby mogli ogrzewać, ocieplić swój dom w sposób bardziej ekologiczny i mniej niszczący powietrze.",1,POS
 "ale to również program Twoja energia czyli upowszechnianie paneli fotowoltaicznych, żeby każdy mógł sobie zamontować w swoim domu też otrzyma do tego dofinansowanie żeby te zero emisyjne źródła energii się upowszechniać.",1,POS
-Smog jest produkowany między innymi przez przez stare kopciuchy.,0,None
+Smog jest produkowany między innymi przez przez stare kopciuchy.,-1,NEG
 nie będziemy udawać że nie ma problemu.,-2,NEG
 "Nie chcesz mieć temperatury to zbij termometr -  rozluźnić normy antysmogowe, żeby powietrze było takie brudne, zanieczyszczone jak było, ale żeby rzadziej był alarm.",-3,NEG
 "My zwracamy te zaostrzone normy smogowe,",0,None
@@ -249,19 +249,19 @@ Ale jak wymienimy piec to też nie wolno Polaków zostawić samym sobie bo paliw
 Bo inaczej nie będzie można w Polsce oddychać.,0,None
 "Ja nie chcę żeby moja córka, ale też dzieci nas wszystkich chodziły w takich maseczkach antysmogowych.",0,None
 Trzeba przejść na zieloną stronę mocy i postawić w 50 procentach na odnawialne źródła energii to powinien być taki miks energetyczny 50 źródła konwencjonalne 50 odnawialne źródła energii przede wszystkim energia wiatrowa słoneczna farmy wiatrowe na Bałtyku które mogą być niezwykłym źródłem energii dla Polski.,-1,NEG
-Pomoc małym gminom mała gmina nie jest w stanie zgazyfikować się w całości.,1,POS
+Pomoc małym gminom mała gmina nie jest w stanie zgazyfikować się w całości.,-1,NEG
 "bo nie mówimy o panu Sławomirze Neumanie, który ma postawione zarzuty za to że nielegalnie naciskał na NFZ i przysporzył prywatnej klinice kilka milionów złotych nienależnych pieniędzy.",-1,NEG
 Nie mówimy o Panie Stanisławie Gawłowskim sekretarzu generalnym Platformy Obywatelskiej z zarzutami prokuratorskim.,-1,NEG
-Nie mówimy o wszystkich aferach Platformy Obywatelskiej.,0,None
+Nie mówimy o wszystkich aferach Platformy Obywatelskiej.,-1,NEG
 Prawo i Sprawiedliwość narzuca znacznie wyższy standard jeżeli tylko ktoś jest o coś realnie podejrzany jest eliminowany.,1,POS
 "Pan Banaś akurat się odsunął od sprawy - poszedł na urlop - która będzie wyjaśniona. Gdyby jakikolwiek zarzut się potwierdził, tu będą potrzebne zmiany prawne bo szef NIK-u jest nieodwoływalny,",-1,NEG
 "bo to kwestia koniunktury gospodarczej, kwestia wysokiej konsumpcji, bardzo niskich inwestycji i procesu uszczelnienia, który rozpoczęła Platforma Obywatelska.",0,None
 "wyższe dochody z VAT byłyby z PiSem czy bez PiSu,",0,None
 "Rok 2017 wzrost konsumpcji o 6, wzrost wpływów z VATu o 23 proc. To pokazuje jaka była skala oszustw.",0,None
 "bo nie łatwo jest bronić trzech muszkieterów praworządności, przyzwoitości: Kuchcińskiego, Misiewicza, Banasia, a nie to trzech tylko trzystu albo trzy tysiące albo jeszcze więcej.",1,POS
-"Wzajemnie wyciągają państwo sobie afery i rzeczywiście i PiS i SLD i Platforma i PSL mają na koncie wiele afer, czytaliśmy o tym w mediach przez wiele lat.",0,None
+"Wzajemnie wyciągają państwo sobie afery i rzeczywiście i PiS i SLD i Platforma i PSL mają na koncie wiele afer, czytaliśmy o tym w mediach przez wiele lat.",-2,NEG
 Natomiast my jako Konfederacja chcielibyśmy zwrócić uwagę że pan Banaś stał na czele Krajowej Administracji Skarbowej,-1,NEG
-"Platforma Obywatelska, partia afer, partia odpowiedzialna za to, że mafia ukradła Polakom 260 miliardów złotych śmie stroić się w pióra obrońców moralności.",1,POS
+"Platforma Obywatelska, partia afer, partia odpowiedzialna za to, że mafia ukradła Polakom 260 miliardów złotych śmie stroić się w pióra obrońców moralności.",0,None
 "O luce w VATcie: 25 miliardów wynosi luka w VAT, rocznie około 25 miliardów, za rządów PISu, więc jakbym używał waszego języka to w 3 lata luka w VAT wyniosła 87 mld  - zagrabiliście 87 mld!",-3,NEG
 "bo rzeczywiście jest sytuacja w której jesteśmy jest wspólnym efektem zaniedbań PSL-u, SLD, PiS-u i Platformy.",-2,NEG
 "Faktycznie tak jest, że żaden rząd poprzedni nie zrobił dla tych kwestii ochrony środowiska i czystego powietrza zbyt wiele.",3,POS
@@ -306,7 +306,7 @@ Jednocześnie szanują wrażliwość i oczekiwania ludzi,1,POS
 szanują głos ekspertów,1,POS
 przedkładają to ponad gusła,0,None
 ona musi być dostępna.,1,POS
-nie ma małej retencji,0,None
+nie ma małej retencji,-1,NEG
 nie ma przed domami zbiorników retencyjnych,-1,NEG
 Trzeba to zmienić musimy zatrzymać wodę,1,POS
 Bardzo ważna jest kwestia wody.,1,POS
@@ -368,8 +368,8 @@ przez zaciskanie pasa w budżetówce polskie państwo działa coraz gorzej,0,Non
 "oprócz płacy minimalnej są też  inne płace, w szczególności płace w budżetówce, gdzie od czterech lat zaciskacie ludziom pas na brzuchach",0,None
 "to jest prawdziwa wolność gospodarcza, która da szansę rozwinąć.",3,POS
 "Jak masz trudniejszą sytuację to masz wakacje od ZUSu,  nie będzie cię ścigać ZUS z płaceniem tej daniny",-2,NEG
-"żeby każdy płacił mniejszy ZUS, żeby nikt na tym nie stracił",-1,NEG
-proporcjonalny ZUS czyli mały ZUS dla małych i mikro przedsiębiorców a zarazem ryczałtowy dla tych większych,1,POS
+"żeby każdy płacił mniejszy ZUS, żeby nikt na tym nie stracił",-2,NEG
+proporcjonalny ZUS czyli mały ZUS dla małych i mikro przedsiębiorców a zarazem ryczałtowy dla tych większych,-1,NEG
 "zwiększenie limitu, w którym można się w sposób korzystny rozliczać ryczałtem PITem",0,None
 powiększenie jeszcze prawa do tego najniższego  w Europie CITu 9 proc,1,POS
 miliard wsparcia na inwestycje,1,POS
@@ -427,12 +427,12 @@ Europa nie powinna się opierać na konkurencji,1,POS
 "albo by pan redaktor Michał Adamczyk kliknął na zakładkę edukacja, tam gdzie pan prezydent zatrudnia ze siedem osób, doradców",0,None
 Robert Biedroń będzie zabiegał także żebyśmy integrowali nasze prawa,2,POS
 Robert Biedroń będzie zabiegał także żebyśmy integrowali nasze prawa,2,POS
-"do państwa w rozgardiaszu doprowadziły ramy ustrojowe, w których samowładztwo i ciężka atmosfera rządów autorytarnych może się szerzyć bezgranicznie",-1,NEG
+"do państwa w rozgardiaszu doprowadziły ramy ustrojowe, w których samowładztwo i ciężka atmosfera rządów autorytarnych może się szerzyć bezgranicznie",-2,NEG
 "Władysław Kosiniak-Kamysz jest jedynym kandydatem, który przyjął pakiet obywatelski Pawła Kukiza, dzień referendalny, ordynacja mieszana, czy wybór Prokuratora Generalnego w wyborach powszechnych",0,None
 "Robert Biedroń jest w polityce nie po to, żeby trwać.",0,None
 "Robert Biedroń jest w polityce nie po to, żeby konserwować to, co wszyscy pozostali kandydaci.",0,None
 Robert Biedroń będzie walczył o sprawy ważne dla Polek i Polaków.,0,None
-"Robert Biedroń tak, jak kiedy był prezydent Słupska, będzie walczył o likwidację śmieciówek",-1,NEG
+"Robert Biedroń tak, jak kiedy był prezydent Słupska, będzie walczył o likwidację śmieciówek",-2,NEG
 Robert Biedroń będzie walczył nieustannie o prawa kobiet.,-1,NEG
 Robert Biedroń jest zwykłym chłopakiem z ulicy Kolejowej w Krośnie,0,None
 Robert Biedroń będzie walczył o dobry klimat.,0,None
@@ -618,7 +618,7 @@ o tym chcą ludzie rozmawiać i chcą żebyśmy to rozwiązali,0,None
 "pogłębianie integracji europejskiej, któremu Krzysztof Bosak jest przeciwny, jest pytaniem o dalsze kierunki naszej polityki zagranicznej",-1,NEG
 Platforma Obywatelska tego nie kontestuje,0,None
 "prezydent Andrzej Duda chwalił się, że to jego list sprawił, że ten nowy instrument zadłużania całej Unii Europejskiej jest tworzony",1,POS
-"stworzenia nowego instrumentu, którego euro Karaczi chcieli przez lata i nigdy nie mieli",0,None
+"stworzenia nowego instrumentu, którego euro Karaczi chcieli przez lata i nigdy nie mieli",-1,NEG
 "mamy polską złotówkę i należy tak stymulować gospodarkę, aby opłacało się produkować tutaj w Polsce i zarabiać w Polsce",1,POS
 opowiadam się za obniżką podatków,0,None
 "żeby się zaopiekował wszystkimi tymi, którzy dzisiaj zostali pozostawieni sami sobie",0,None
@@ -662,7 +662,7 @@ według prawa pacjentów mamy wyrażać zgody na zabiegi medyczne,3,POS
 chcecie naprawdę zmiany służby zdrowia,0,None
 chcecie naprawdę zmiany służby zdrowia,0,None
 "nawet jak ci siedemdziesięciolatkowie politycy pozwolą tutaj czterdziestoletnim kandydatom startować na ten ważny urząd, to nie ukrywajmy, to będą ich chłopcy na posyłki",2,POS
-"wprowadzimy szczepionkę, a ona po dwóch, trzech latach da efekty uboczne, które naruszą nie tylko nasze ciało, ale nasza psychikę",1,POS
+"wprowadzimy szczepionkę, a ona po dwóch, trzech latach da efekty uboczne, które naruszą nie tylko nasze ciało, ale nasza psychikę",0,None
 "wprowadzić w ogóle szczepionkę, to potrzebne są długoletnie badania. Minimum pięć lat",1,POS
 są tu też wśród nas lekarze i chyba potwierdzą,0,None
 "profesor, lekarz odpowiedzialn za koronawirusa na całe województwo w Polsce twierdzi, że mamy już trzy koronawirusy",-1,NEG
@@ -706,7 +706,7 @@ podobnie jest z politykami,0,None
 "Szymon Hołownia nie wyobraża sobie życia w państwie, w którym ojciec Rydzyk przez dziewięć minut udziela reprymendy urzędującemu Prezydentowi Rzeczypospolitej",0,None
 "Szymon Hołownia nie wyobraża sobie życia w państwie, w którym ojciec Rydzyk przez dziewięć minut udziela reprymendy urzędującemu Prezydentowi Rzeczypospolitej",0,None
 "trzeba i Szymon Hołownia zrobi to jako prezydent, zastanowić się nad funduszem kościelnym i pomóc Kościołowi, który najwyraźniej nie potrafi tego zrobić, bezwzględnie i do końca rozliczyć się ze wszystkimi przypadkami pedofilii",0,None
-"fikcją jest religia w szkole, która powoduje, że część dzieci, która nie chce uczestniczyć w lekcjach religii, jest stygmatyzowana i tak naprawdę przymuszana do siedzenia w kątach",-1,NEG
+"fikcją jest religia w szkole, która powoduje, że część dzieci, która nie chce uczestniczyć w lekcjach religii, jest stygmatyzowana i tak naprawdę przymuszana do siedzenia w kątach",-2,NEG
 "kościół to miejsce dla tych, którzy są katolikami, praktykują, a niekoniecznie szkoła, która powinna być świecka",-1,NEG
 wyznawców różnych religii w Polsce jest wielu,-1,NEG
 Europa była zakładana przez chrześcijańskich demokratów i o tym trzeba pamiętać,0,None
@@ -741,7 +741,7 @@ są wciąż obszary objęte wojną,1,POS
 "najważniejsze jest to, żeby tego socjalizmu nie wprowadzać i tym przyjezdnym nie dawać za darmo pieniędzy",1,POS
 "brak dostępu do zasiłków, socjali i darmowych usług spowoduje, że nie będą tu się się pchały darmozjady i ci, którzy chcą na zasiłkach żyć",2,POS
 "imigranci przyjeżdżają przecież po to, żeby żyć na zasiłkach, a nie po to, żeby pracować",2,POS
-"niestety prezydent Duda mówi o wyimaginowanej wspólnocie, o wspólnocie dla naiwniaków",-1,NEG
+"niestety prezydent Duda mówi o wyimaginowanej wspólnocie, o wspólnocie dla naiwniaków",-2,NEG
 w Unii Europejskiej jesteśmy piątą potęgą,0,None
 "polityka zagraniczna dzisiaj, to przede wszystkim pieniądze na inwestycje, pieniądze dla was",0,None
 Trzeba stawiać na polską przedsiębiorczość,0,None

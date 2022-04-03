@@ -31,10 +31,20 @@ with open('corpuses/negative_words_pl.txt', 'r', encoding='utf8') as csv_file:
     for row in csv_reader:
         sentiment[row[0]] = -1
 
+with open('corpuses/declension_hatred_cleaned.csv', 'r', encoding='windows-1250') as csv_file:
+    csv_reader2 = csv.reader(csv_file, delimiter=';')
+    next(csv_reader2)
+    for row in csv_reader2:
+        if row[4] not in sentiment.keys():
+            sentiment[row[4]] = -1
+
 with open('corpuses/positive_words_pl.txt', 'r', encoding='utf8') as csv_file:
-    csv_reader = csv.reader(csv_file, delimiter=';')
-    for row in csv_reader:
-        sentiment[row[0]] = 1
+    csv_reader3 = csv.reader(csv_file, delimiter=';')
+    for row in csv_reader3:
+        if row[0] not in sentiment.keys():
+            sentiment[row[0]] = 1
+
+
 
 df = pd.read_csv('original-model/premises.csv')
 sen_an = pd.DataFrame(df)
@@ -106,5 +116,4 @@ for i, v in enumerate(x_axis):
 plt.barh(y_axis, x_axis, align='center', color='green')
 ax.invert_yaxis() # labels read top-to-bottom
 ax.set_xlabel('Liczba przesłanek zakwalifikowanych do danej kategorii')
-ax.set_title('Analiza sentymentu przesłanek')
 plt.savefig('plots/sen-an.png')

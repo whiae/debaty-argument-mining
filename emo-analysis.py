@@ -168,5 +168,4 @@ for i, v in enumerate(x_axis):
 plt.barh(y_axis, x_axis, align='center', color='maroon')
 ax.invert_yaxis() # labels read top-to-bottom
 ax.set_xlabel('Liczba przesłanek zakwalifikowanych do danej kategorii')
-ax.set_title('Analiza emocjonalna przesłanek')
 plt.savefig('plots/emo-an.png')
