@@ -77,6 +77,8 @@ fea_count = 0
 dis_count = 0
 none_count = 0
 
+''' wczytywanie wyodrębnionych par konkluzja-przesłanka w formie tekstowej '''
+
 df = pd.read_csv('original-model/pairs_text.csv')
 emo_an = pd.DataFrame(df)
 

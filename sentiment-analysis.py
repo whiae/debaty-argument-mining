@@ -26,10 +26,16 @@ f.close()
 
 sentiment = {}
 
-with open('corpuses/negative_words_pl.txt', 'r', encoding='utf8') as csv_file:
-    csv_reader = csv.reader(csv_file, delimiter=';')
+with open('corpuses/slownikWydzwieku.csv', 'r', encoding='utf8') as csv_file:
+    csv_reader = csv.reader(csv_file, delimiter='\t')
     for row in csv_reader:
-        sentiment[row[0]] = -1
+        sentiment[row[0]] = int(row[3])
+
+with open('corpuses/negative_words_pl.txt', 'r', encoding='utf8') as csv_file:
+    csv_reader1 = csv.reader(csv_file, delimiter=';')
+    for row in csv_reader1:
+        if row[0] not in sentiment.keys():
+            sentiment[row[0]] = -1
 
 with open('corpuses/declension_hatred_cleaned.csv', 'r', encoding='windows-1250') as csv_file:
     csv_reader2 = csv.reader(csv_file, delimiter=';')
@@ -45,6 +51,7 @@ with open('corpuses/positive_words_pl.txt', 'r', encoding='utf8') as csv_file:
             sentiment[row[0]] = 1
 
 
+''' wczytywanie wyodrębnionych par konkluzja-przesłanka w formie tekstowej '''
 
 df = pd.read_csv('original-model/pairs_text.csv')
 sen_an = pd.DataFrame(df)
@@ -71,6 +78,7 @@ for i in sen_an['text']:
     for token in nlp(i):
         if not token.lemma_ in polish_stopwords and not token.lemma_ in stop_words:
             tokens.append(token.lemma_)
+            words_num = words_num + 1
 
     ''' obliczanie wartości sentymentu dla tokenów w zbiorze '''
 
