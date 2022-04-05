@@ -46,7 +46,7 @@ with open('corpuses/positive_words_pl.txt', 'r', encoding='utf8') as csv_file:
 
 
 
-df = pd.read_csv('original-model/premises.csv')
+df = pd.read_csv('original-model/pairs_text.csv')
 sen_an = pd.DataFrame(df)
 
 

@@ -58,8 +58,8 @@ with open('corpuses/emean_emo_cat.csv', 'r', encoding='utf8') as csv_file_2:
         dis_2 = row[7].replace(',', '.')
         if word_2 not in happy.keys():
             happy[word_2] = hap_2
-            sadness[word_2] = sad_2
             anger[word_2] = ang_2
+            sadness[word_2] = sad_2
             fearness[word_2] = fear_2
             disgust[word_2] = dis_2
 
@@ -77,7 +77,7 @@ fea_count = 0
 dis_count = 0
 none_count = 0
 
-df = pd.read_csv('original-model/premises.csv')
+df = pd.read_csv('original-model/pairs_text.csv')
 emo_an = pd.DataFrame(df)
 
 for i in emo_an['text']:
@@ -102,37 +102,44 @@ for i in emo_an['text']:
 
     ''' obliczanie wartości emocji dla słów w zbiorze '''
 
+
     for token in tokens:
         if token in happy.keys():
             hap_val = hap_val + float(happy.get(str(token)))
-            sad_val = sad_val + float(sadness.get(str(token)))
             angry_val = angry_val + float(anger.get(str(token)))
+            sad_val = sad_val + float(sadness.get(str(token)))
             fear_val = fear_val + float(fearness.get(str(token)))
             dis_val = dis_val + float(disgust.get(str(token)))
 
-    happy_values.append(hap_val)
-    anger_values.append(angry_val)
-    sadness_values.append(sad_val)
-    fear_values.append(fear_val)
-    disgust_values.append(dis_val)
+    hap_ro = round((hap_val/words_num), 2)
+    ang_ro = round((angry_val/words_num), 2)
+    sad_ro = round((sad_val/words_num), 2)
+    fea_ro = round((fear_val/words_num), 2)
+    dis_ro = round((dis_val/words_num), 2)
+
+    happy_values.append(hap_ro)
+    anger_values.append(ang_ro)
+    sadness_values.append(sad_ro)
+    fear_values.append(fea_ro)
+    disgust_values.append(dis_ro)
 
     ''' przypisywanie odpowiedniej kategorii zależnie od najwyższej wartości emocji '''
 
-    maks = max(hap_val/words_num, sad_val/words_num, angry_val/words_num, fear_val/words_num, dis_val/words_num)
-    if maks >= 0.5:
-        if maks == hap_val/words_num:
+    maks = max(hap_ro, ang_ro, sad_ro, fea_ro, dis_ro)
+    if maks > 0:
+        if maks == hap_ro:
             labels.append('HAP')
             hap_count = hap_count + 1
-        elif maks == angry_val / words_num:
+        elif maks == ang_ro:
             labels.append('ANG')
             ang_count = ang_count + 1
-        elif maks == sad_val/words_num:
+        elif maks == sad_ro:
             labels.append('SAD')
             sad_count = sad_count + 1
-        elif maks == fear_val / words_num:
+        elif maks == fea_ro:
             labels.append('FEA')
             fea_count = fea_count + 1
-        elif maks == dis_val / words_num:
+        elif maks == dis_ro:
             labels.append('DIS')
             dis_count = dis_count + 1
     else:
