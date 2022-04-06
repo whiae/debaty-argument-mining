@@ -1,4 +1,5 @@
 import pandas as pd
+from sklearn.metrics import precision_score, recall_score, f1_score
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 from sklearn.svm import SVC
@@ -16,7 +17,7 @@ y = emo_an['EMO_lab'].values
 
 ''' przygotowanie danych '''
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, shuffle=True, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, shuffle=True, random_state=42)
 
 ''' wektoryzacja - przekształcenie tekstów surowych na macierz cech TF-IDF '''
 
@@ -48,7 +49,27 @@ y_pred_forest = clf_forest.predict(X_test_vectors)
 
 ''' ocena modeli '''
 
+print('Trafność:')
 print(clf_svm.score(X_test_vectors, y_test))
 print(clf_log.score(X_test_vectors, y_test))
 print(clf_tree.score(X_test_vectors, y_test))
 print(clf_forest.score(X_test_vectors, y_test))
+
+print('Precyzja:')
+print(precision_score(y_test, y_pred_svm, average='macro', zero_division=0))
+print(precision_score(y_test, y_pred_log, average='macro', zero_division=0))
+print(precision_score(y_test, y_pred_tree, average='macro', zero_division=0))
+print(precision_score(y_test, y_pred_forest, average='macro', zero_division=0))
+
+print('Wrażliwość:')
+print(recall_score(y_test, y_pred_svm, average='macro', zero_division=0))
+print(recall_score(y_test, y_pred_log, average='macro', zero_division=0))
+print(recall_score(y_test, y_pred_tree, average='macro', zero_division=0))
+print(recall_score(y_test, y_pred_forest, average='macro', zero_division=0))
+
+print('F1-score:')
+print(f1_score(y_test, y_pred_svm, average='macro'))
+print(f1_score(y_test, y_pred_log, average='macro'))
+print(f1_score(y_test, y_pred_tree, average='macro'))
+print(f1_score(y_test, y_pred_forest, average='macro'))
+

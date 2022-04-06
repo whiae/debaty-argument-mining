@@ -1,5 +1,6 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split
+from sklearn.metrics import precision_score, recall_score, f1_score
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 from sklearn.svm import SVC
 from sklearn.linear_model import LogisticRegression
@@ -16,7 +17,7 @@ y = sen_an['SEN_lab'].values
 
 ''' przygotowanie danych '''
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, shuffle=True, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, shuffle=True, random_state=42)
 
 ''' wektoryzacja - przekształcenie tekstów surowych na macierz cech TF-IDF '''
 
@@ -48,7 +49,26 @@ y_pred_forest = clf_forest.predict(X_test_vectors)
 
 ''' ocena modeli '''
 
+print('Trafność:')
 print(clf_svm.score(X_test_vectors, y_test))
 print(clf_log.score(X_test_vectors, y_test))
 print(clf_tree.score(X_test_vectors, y_test))
 print(clf_forest.score(X_test_vectors, y_test))
+
+print('Precyzja:')
+print(precision_score(y_test, y_pred_svm, average='macro'))
+print(precision_score(y_test, y_pred_log, average='macro'))
+print(precision_score(y_test, y_pred_tree, average='macro'))
+print(precision_score(y_test, y_pred_forest, average='macro'))
+
+print('Wrażliwość:')
+print(recall_score(y_test, y_pred_svm, average='macro'))
+print(recall_score(y_test, y_pred_log, average='macro'))
+print(recall_score(y_test, y_pred_tree, average='macro'))
+print(recall_score(y_test, y_pred_forest, average='macro'))
+
+print('F1-score:')
+print(f1_score(y_test, y_pred_svm, average='macro'))
+print(f1_score(y_test, y_pred_log, average='macro'))
+print(f1_score(y_test, y_pred_tree, average='macro'))
+print(f1_score(y_test, y_pred_forest, average='macro'))
