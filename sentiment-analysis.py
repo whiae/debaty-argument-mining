@@ -121,7 +121,7 @@ x_axis = (pos_count, neg_count, un_count)
 for i, v in enumerate(x_axis):
     ax.text(v + 1, i + 0.06, str(v), color='black', size='small')
 
-plt.barh(y_axis, x_axis, align='center', color='green')
+plt.barh(y_axis, x_axis, align='center', color='#59695A')
 ax.invert_yaxis() # labels read top-to-bottom
 ax.set_xlabel('Liczba przesłanek zakwalifikowanych do danej kategorii')
 plt.savefig('plots/sen-an.png')

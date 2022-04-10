@@ -1,11 +1,11 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import precision_score, recall_score, f1_score
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 from sklearn.svm import SVC
 from sklearn.linear_model import LogisticRegression
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
+import sklearn.metrics as skm
 
 ''' wczytywanie danych '''
 
@@ -35,7 +35,7 @@ clf_svm = SVC(kernel='linear', random_state=42)
 clf_svm.fit(X_train_vectors, y_train)
 y_pred_svm = clf_svm.predict(X_test_vectors)
 
-clf_log = LogisticRegression(random_state=42)
+clf_log = LogisticRegression(multi_class='multinomial', solver='lbfgs', random_state=42)
 clf_log.fit(X_train_vectors, y_train)
 y_pred_log = clf_log.predict(X_test_vectors)
 
@@ -49,26 +49,20 @@ y_pred_forest = clf_forest.predict(X_test_vectors)
 
 ''' ocena modeli '''
 
+reportSVM = skm.classification_report(y_test, y_pred_svm, output_dict=True, zero_division=1)
+print(reportSVM)
+
+reportLOG = skm.classification_report(y_test, y_pred_log, output_dict=True, zero_division=1)
+print(reportLOG)
+
+reportTREE = skm.classification_report(y_test, y_pred_tree, output_dict=True, zero_division=1)
+print(reportTREE)
+
+reportFOR = skm.classification_report(y_test, y_pred_forest, output_dict=True, zero_division=1)
+print(reportFOR)
+
 print('Trafność:')
 print(clf_svm.score(X_test_vectors, y_test))
 print(clf_log.score(X_test_vectors, y_test))
 print(clf_tree.score(X_test_vectors, y_test))
 print(clf_forest.score(X_test_vectors, y_test))
-
-print('Precyzja:')
-print(precision_score(y_test, y_pred_svm, average='macro'))
-print(precision_score(y_test, y_pred_log, average='macro'))
-print(precision_score(y_test, y_pred_tree, average='macro'))
-print(precision_score(y_test, y_pred_forest, average='macro'))
-
-print('Wrażliwość:')
-print(recall_score(y_test, y_pred_svm, average='macro'))
-print(recall_score(y_test, y_pred_log, average='macro'))
-print(recall_score(y_test, y_pred_tree, average='macro'))
-print(recall_score(y_test, y_pred_forest, average='macro'))
-
-print('F1-score:')
-print(f1_score(y_test, y_pred_svm, average='macro'))
-print(f1_score(y_test, y_pred_log, average='macro'))
-print(f1_score(y_test, y_pred_tree, average='macro'))
-print(f1_score(y_test, y_pred_forest, average='macro'))
