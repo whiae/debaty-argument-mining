@@ -121,7 +121,35 @@ x_axis = (pos_count, neg_count, un_count)
 for i, v in enumerate(x_axis):
     ax.text(v + 1, i + 0.06, str(v), color='black', size='small')
 
-plt.barh(y_axis, x_axis, align='center', color='#59695A')
+plt.barh(y_axis, x_axis, align='center', color='#5FB7E5')
 ax.invert_yaxis() # labels read top-to-bottom
 ax.set_xlabel('Liczba przesłanek zakwalifikowanych do danej kategorii')
 plt.savefig('plots/sen-an.png')
+
+#--------------------------
+
+pos_dict = 0
+neg_dict = 0
+neu_dict = 0
+
+for key, value in sentiment.items():
+    if value == 1:
+        pos_dict = pos_dict + 1
+    elif value == -1:
+        neg_dict = pos_dict + 1
+    elif value == 0:
+        neu_dict = pos_dict + 1
+
+plt.rcdefaults()
+fig, ax = plt.subplots()
+
+y_axis = ('POS', 'NEG', 'None')
+x_axis = (pos_dict, neg_dict, neu_dict)
+
+for i, v in enumerate(x_axis):
+    ax.text(v + 1, i + 0.06, str(v), color='black', size='small')
+
+plt.barh(y_axis, x_axis, align='center', color='#F0CB69')
+ax.invert_yaxis() # labels read top-to-bottom
+ax.set_xlabel('Liczba lematów należących do danej kategorii')
+plt.savefig('plots/sen-an-dict.png')

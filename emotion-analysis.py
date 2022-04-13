@@ -174,7 +174,23 @@ x_axis = (hap_count, ang_count, sad_count, fea_count, dis_count, none_count)
 for i, v in enumerate(x_axis):
     ax.text(v + 1, i + 0.06, str(v), color='black', size='small')
 
-plt.barh(y_axis, x_axis, align='center', color='#7B947C')
+plt.barh(y_axis, x_axis, align='center', color='#AB91C5')
 ax.invert_yaxis() # labels read top-to-bottom
 ax.set_xlabel('Liczba przesłanek zakwalifikowanych do danej kategorii')
 plt.savefig('plots/emo-an.png')
+
+#--------------------------
+
+plt.rcdefaults()
+fig, ax = plt.subplots()
+
+y_axis = ('HAP', 'ANG', 'SAD', 'FEA', 'DIS')
+x_axis = (len(happy), len(anger), len(sadness), len(fearness), len(disgust))
+
+for i, v in enumerate(x_axis):
+    ax.text(v + 1, i + 0.06, str(v), color='black', size='small')
+
+plt.barh(y_axis, x_axis, align='center', color='#8EC3A7')
+ax.invert_yaxis() # labels read top-to-bottom
+ax.set_xlabel('Liczba lematów należących do danej kategorii')
+plt.savefig('plots/emo-an-dict.png')
