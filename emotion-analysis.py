@@ -176,7 +176,7 @@ for i, v in enumerate(x_axis):
 
 plt.barh(y_axis, x_axis, align='center', color='#AB91C5')
 ax.invert_yaxis() # labels read top-to-bottom
-ax.set_xlabel('Liczba przesłanek zakwalifikowanych do danej kategorii')
+ax.set_xlabel('Liczba par przesłanka-konkluzja zakwalifikowanych do danej kategorii')
 plt.savefig('plots/emo-an.png')
 
 #--------------------------
