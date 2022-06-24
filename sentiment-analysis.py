@@ -124,6 +124,7 @@ for i, v in enumerate(x_axis):
 plt.barh(y_axis, x_axis, align='center', color='#5FB7E5')
 ax.invert_yaxis() # labels read top-to-bottom
 ax.set_xlabel('Liczba par przesłanka-konkluzja zakwalifikowanych do danej kategorii')
+ax.set_ylabel('Wyodrębnione kategorie sentymentu')
 plt.savefig('plots/sen-an.png')
 
 #--------------------------
@@ -152,4 +153,5 @@ for i, v in enumerate(x_axis):
 plt.barh(y_axis, x_axis, align='center', color='#F0CB69')
 ax.invert_yaxis() # labels read top-to-bottom
 ax.set_xlabel('Liczba lematów należących do danej kategorii')
+ax.set_ylabel('Wyodrębnione kategorie sentymentu')
 plt.savefig('plots/sen-an-dict.png')
